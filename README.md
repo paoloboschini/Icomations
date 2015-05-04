@@ -10,8 +10,7 @@ Basic Usage
 
 See example project for a demo.
 
-
-Add a button to your view via Interface Builder, change the class to Icomation in the Identity Inspector and connect an outlet to it. Or create a new Icomation in code
+Import Icomation.swift in your project. Add a button to your view via Interface Builder, change the class to Icomation in the Identity Inspector and connect an outlet to it. Or create a new Icomation in code
 ```swift
 var icomation = Icomation(frame: CGRectMake(0, 0, 50, 50))
 view.addSubview(icomation)
