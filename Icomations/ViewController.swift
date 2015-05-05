@@ -66,6 +66,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        icomation.type = IconType.ArrowUp
 //        icomation.animationDuration = 1.0
 //        icomation.numberOfRotations = 3
+//        icomation.addTarget(self, action: "click", forControlEvents: UIControlEvents.TouchUpInside)
 //        
 //        icomation.topShape.strokeColor = UIColor.redColor().CGColor
 //        icomation.middleShape.strokeColor = UIColor.whiteColor().CGColor
@@ -103,5 +104,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             data[1] = "Rotations: \(Int(stepper.value))"
         }
         tableView.reloadData()
+    }
+    
+    @IBAction func click() {
+        println(__FUNCTION__)
     }
 }

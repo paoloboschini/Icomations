@@ -21,7 +21,7 @@ enum IconType {
     case ArrowUp, ArrowLeft, ArrowDown, ArrowRight, SmallArrowUp, SmallArrowLeft, SmallArrowDown, SmallArrowRight, Close, SmallClose
 }
 
-class Icomation: UIView {
+class Icomation: UIButton {
     
     private enum IconState {
         case Hamburger, Arrow, Close
@@ -48,9 +48,9 @@ class Icomation: UIView {
     }
     
     private func create() {
-        
         type = IconType.self.SmallArrowLeft
         
+        titleLabel?.text = ""
         backgroundColor = UIColor.clearColor()
         let strokeColor = UIColor.whiteColor()
         
